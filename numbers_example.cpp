@@ -7,15 +7,7 @@ int main() {
     Numbers nums;
     int number;
 
-    cout << "Size: ";
-    cin >> nums.size;
-
-    nums.numbers = (int*)malloc(sizeof(int) * nums.size);
-
-    cout << "Numbers: ";
-    for(int i = 0; i < nums.size; i++) {
-        cin >> nums.numbers[i];
-    }
+    inputNumber(&nums);
 
     cout << endl;
     cout << "Bubble sort: ";

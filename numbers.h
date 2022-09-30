@@ -18,6 +18,18 @@ void printNumber(Numbers nums) {
     std::cout << std::endl;
 }
 
+void inputNumber(Numbers *nums) {
+    std::cout << "Size: ";
+    std::cin >> nums->size;
+
+    nums->numbers = (int*)malloc(sizeof(int) * nums->size);
+
+    std::cout << "Numbers: ";
+    for(int i = 0; i < nums->size; i++) {
+        std::cin >> nums->numbers[i];
+    }
+}
+
 Numbers bubbleSort(Numbers nums) {
     int i, j;
     for(i = 0; i < nums.size; i++)
