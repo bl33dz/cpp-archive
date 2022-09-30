@@ -25,4 +25,5 @@ Functions:
 - inputNumber
 
 Example:
+
 ![test](https://s5.gifyu.com/images/teste2d6972a43c1cc55.gif)
