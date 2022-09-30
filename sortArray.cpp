@@ -14,7 +14,7 @@ void swap(int *a, int *b) {
 }
 
 Numbers bubbleSort(Numbers nums) {
-    int i, j, temp;
+    int i, j;
     for(i = 0; i < nums.size; i++)
         for(j = 0; j < nums.size; j++)
             if(nums.numbers[j] > nums.numbers[i])
@@ -32,6 +32,22 @@ Numbers selectionSort(Numbers nums) {
                 min = j;
         if(min != i)
             swap(&nums.numbers[min], &nums.numbers[i]);
+    }
+
+    return nums;
+}
+
+Numbers insertionSort(Numbers nums) {
+    int i, j, k;
+
+    for(i = 1; i < nums.size; i++) {
+        k = nums.numbers[i];
+        j = i - 1;
+        while(j >= 0 && nums.numbers[j] > k) {
+            nums.numbers[j + 1] = nums.numbers[j];
+            j = j - 1;
+        }
+        nums.numbers[j + 1] = k;
     }
 
     return nums;
@@ -61,6 +77,12 @@ int main() {
     Numbers res2 = selectionSort(nums);
     for(int i = 0; i < res2.size; i++)
         cout << res2.numbers[i] << " ";
+
+    cout << endl;
+    cout << "Insertion sort: ";
+    Numbers res3 = insertionSort(nums);
+    for(int i = 0; i < res3.size; i++)
+        cout << res3.numbers[i] << " ";
 
     cout << endl;
 }
