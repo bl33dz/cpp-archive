@@ -43,11 +43,10 @@ int main() {
     cout << endl;
 
     int search = binarySearch(nums, number);
-    if(search == -1) {
+    if(search == -1)
         cout << "Number not found in array";
-    } else {
+    else
         cout << "Number " << number << " found at index " << search;
-    }
     cout << endl;
 
     return 0;
