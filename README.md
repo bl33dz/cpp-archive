@@ -27,3 +27,16 @@ Functions:
 Example:
 
 ![test](https://s5.gifyu.com/images/teste2d6972a43c1cc55.gif)
+
+### vector.cpp
+ Vectors are sequence containers representing arrays that can change in size.
+
+Functions:
+- inputVector
+- printVector
+- bubbleSort
+- binarySearch
+
+Example:
+
+![example](https://s4.gifyu.com/images/example61af3c825d4f08f9.gif)
