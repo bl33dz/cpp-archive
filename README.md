@@ -29,13 +29,23 @@ Example:
 ![test](https://s5.gifyu.com/images/teste2d6972a43c1cc55.gif)
 
 ### vector.cpp
- Vectors are sequence containers representing arrays that can change in size.
+ Vectors are sequence containers representing arrays that can change in size.\
+ Full Documentation: https://cplusplus.com/reference/vector/vector/.
 
 Functions:
 - inputVector
 - printVector
-- bubbleSort
-- binarySearch
+- bubbleSort (same with `numbers.h` but using vector)
+- binarySearch (same with `numbers.h` but using vector)
+
+Notes:
+- Add element at the end: `vector.push_back(value)`
+- Delete last element: `vector.pop_back()`
+- Insert elements: `vector.insert(vector.begin()+n)` (Using iterator)
+- Erase elements: `vector.erase(vector.begin()+n, value)` (Using iterator)
+- Swap content: `vector.swap(another_vector)`
+- Clear content: `vector.clear()`
+- Iterators: `vector.begin()`, `vector.end()`, etc.
 
 Example:
 
