@@ -5,6 +5,7 @@ using namespace std;
 int main() {
     List L;
     int menu;
+    address P;
 
     createList(L); // initialize List L
 
@@ -41,7 +42,7 @@ int main() {
                 break;
             }
             case 3: {
-                deleteLast(L);
+                deleteLast(L, P);
                 break;
             }
             case 4: {
